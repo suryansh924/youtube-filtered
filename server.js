@@ -3,6 +3,15 @@ const express = require("express");
 const session = require("express-session");
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
+const cors = require("cors");
+
+// Configure CORS
+app.use(
+  cors({
+    origin: "https://youtube-filtered.netlify.app",
+    credentials: true, // Allow cookies and credentials
+  })
+);
 
 const app = express();
 const PORT = process.env.PORT;
@@ -58,8 +67,10 @@ app.get(
   "/auth/google/callback",
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
-    // Redirect to a success page after login
-    res.redirect("/profile");
+    // Redirect the user to the frontend with a success state
+    res.redirect(
+      `https://your-frontend-url.netlify.app/dashboard?user=${req.user.displayName}`
+    );
   }
 );
 

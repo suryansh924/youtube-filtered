@@ -105,6 +105,19 @@
         border-radius:100%;
         cursor: pointer;
     }
+    .google-btn {
+      display: inline-block;
+      background: #4285F4;
+      color: white;
+      border-radius: 4px;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .google-btn:hover {
+      background: #357AE8;
+    }
   </style>
 </head>
 <body>
@@ -135,9 +148,10 @@
     <div class="feed-toggle">
       <button>Feed: <span id="feed-toggle-status">Off</span></button>
     </div>
-    <div class="profile-icon">
+    <!-- <div class="profile-icon">
         Avatar
-    </div>
+    </div> -->
+    <a href="/auth/google" class="google-btn">Sign up</a>
   </div>
 
   <!-- <div class="filter-tags">
