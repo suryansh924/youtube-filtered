@@ -38,6 +38,7 @@
     }
 
     .search-bar input {
+        font-size:medium;
       flex-grow: 1;
       border: none;
       background: none;
@@ -81,6 +82,8 @@
     }
 
     .feed-toggle button {
+        font-size: medium;
+        margin-right: 15px;
       background: none;
       border: 1px solid #555;
       color: #fff;
@@ -92,6 +95,15 @@
     .feed-container {
       padding: 20px;
       text-align: center;
+    }
+
+    .profile-icon {
+        display: flex;
+        align-items: center;
+        padding: 20px 10px;
+        border: 1px solid #555;
+        border-radius:100%;
+        cursor: pointer;
     }
   </style>
 </head>
@@ -122,6 +134,9 @@
 
     <div class="feed-toggle">
       <button>Feed: <span id="feed-toggle-status">Off</span></button>
+    </div>
+    <div class="profile-icon">
+        Avatar
     </div>
   </div>
 
