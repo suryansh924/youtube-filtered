@@ -85,7 +85,7 @@ const Header = () => {
           Feed: <span id="feed-toggle-status">Off</span>
         </button>
         <a
-          href="https://youtube-filtered.vercel.app/auth/google"
+          href="https://youtube-filtered.onrender.com/auth/google"
           class="google-btn"
         >
           <VscAccount />

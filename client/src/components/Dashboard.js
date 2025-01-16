@@ -6,7 +6,7 @@ const Dashboard = () => {
 
   // Fetch user data after successful login
   useEffect(() => {
-    fetch("https://youtube-filtered.vercel.app/api/current_user", {
+    fetch("https://youtube-filtered.onrender.com/api/current_user", {
       method: "GET",
       credentials: "include", // Send cookies (session) with the request
     })
