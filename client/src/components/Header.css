@@ -1,0 +1,130 @@
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    /* border-bottom: 1px solid #333; */
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .search-bar {
+    min-width: 600px;
+    display: flex;
+    /* flex-grow: 1; */
+    margin: 0 32px;
+    margin-left: 32px;
+    align-items: center;
+    background-color: none;
+    box-shadow: none;
+    border: 1px solid #555;
+    border-radius: 40px 40px 40px 40px;
+    cursor: text;
+    padding: 0 0 0 16px;
+  }
+
+  .search-bar input {
+    font-size:14px;
+    flex-grow: 1;
+    border: none;
+    background: none;
+    color: #fff;
+    padding: none;
+    outline: none;
+  }
+
+  .search-bar button {
+    background: hsla(0, 0%, 100%, .08);
+    border: none;
+    border-left: 1px solid #555;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+  }
+
+  .filter-tags {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .filter-tags .tag {
+    padding: 10px;
+    border: 2px dashed #c6c6c6;;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .filter-tags .tag.active {
+    border-color: #1e90ff;
+    background-color: #1e90ff;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .feed-toggle-btn {
+    display: flex;
+    font-size: 14px;
+    margin-right: 15px;
+    font-weight:600;
+    background: none;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 20px;
+    padding: 10px 16px;
+    cursor: pointer;
+  }
+
+  .feed-toggle-btn:hover {
+    border-color:hsla(0, 0%, 100%, .08);
+    background-color: hsla(0, 0%, 100%, .08);
+  }
+
+  .feed-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-icon {
+      display: flex;
+      align-items: center;
+      padding: 20px 10px;
+      border: 1px solid #555;
+      border-radius:100%;
+      cursor: pointer;
+  }
+  .google-btn {
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+    justify-content: center; /* Centers them horizontally */
+    background-color: transparent;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 20px;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    gap: 8px; /* Adds space between the icon and the text */
+  }
+  
+  .google-btn:hover {
+    border-color:hsla(0, 0%, 100%, .08);
+    background-color: hsla(0, 0%, 100%, .08);
+  }
+  
+  .google-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  
