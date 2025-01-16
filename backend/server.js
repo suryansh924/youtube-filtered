@@ -11,7 +11,7 @@ const PORT = process.env.PORT;
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow requests from React frontend
+    origin: "https://youtube-filtered.netlify.app", // Allow requests from React frontend
     credentials: true, // Allow cookies to be sent in requests
   })
 );
@@ -40,7 +40,7 @@ app.get(
   "/auth/google/callback",
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
-    res.redirect("http://localhost:3000/dashboard"); // Update with the correct path
+    res.redirect("https://youtube-filtered.netlify.app/dashboard"); // Update with the correct path
   }
 );
 

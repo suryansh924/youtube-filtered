@@ -84,7 +84,10 @@ const Header = () => {
         <button class="feed-toggle-btn">
           Feed: <span id="feed-toggle-status">Off</span>
         </button>
-        <a href="http://localhost:3001/auth/google" class="google-btn">
+        <a
+          href="https://youtube-filtered.vercel.app/auth/google"
+          class="google-btn"
+        >
           <VscAccount />
           <span>Sign in</span>
         </a>
