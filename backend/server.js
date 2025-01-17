@@ -40,7 +40,11 @@ app.get(
   "/auth/google/callback",
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
-    res.redirect("https://youtube-filtered.netlify.app/dashboard"); // Update with the correct path
+    try {
+      res.redirect("https://youtube-filtered.netlify.app/dashboard"); // Update with the correct path
+    } catch (e) {
+      console.log(e);
+    }
   }
 );
 
